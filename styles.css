@@ -22,6 +22,8 @@
 
 .floatingCars{
     background-size:constain;
+    height: 500px;
+    width:500px;
 }
   
   body {
