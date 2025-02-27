@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCars - Create Account</title>
+    <link rel="stylesheet" href="signup-styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-card">
+            <div class="signup-left">
+                <div class="signup-left-content">
+                    <div class="floating-cars">
+                        <div class="car car1"></div>
+                        <div class="car car2"></div>
+                        <div class="car car3"></div>
+                    </div>
+                    <h2 class="welcome-text">Join the WeCars Family</h2>
+                    <p class="welcome-subtext">Create your account and start your journey</p>
+                </div>
+            </div>
+            <div class="signup-right">
+                <div class="signup-form-container">
+                    <div class="logo">
+                        <span class="logo-text">WeCars</span>
+                    </div>
+                    <h1>Create Account</h1>
+                    <p class="form-subtitle">Fill in your details to get started</p>
+                    
+                    <form id="signupForm">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <div class="input-container">
+                                <input type="text" id="fullname" required>
+                                <div class="input-focus-effect"></div>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-container">
+                                <input type="email" id="email" required>
+                                <div class="input-focus-effect"></div>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <div class="input-container">
+                                <input type="text" id="username" required>
+                                <div class="input-focus-effect"></div>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="input-container">
+                                <input type="password" id="password" required>
+                                <div class="input-focus-effect"></div>
+                                <div class="password-strength"></div>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <div class="input-container">
+                                <input type="password" id="confirmPassword" required>
+                                <div class="input-focus-effect"></div>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-options">
+                            <div class="terms-checkbox">
+                                <input type="checkbox" id="terms" required>
+                                <label for="terms">I agree to the Terms & Conditions</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="sign-up-btn">
+                            <span>CREATE ACCOUNT</span>
+                            <div class="btn-shine"></div>
+                        </button>
+                        
+                        <div class="login-link">
+                            <p>Already have an account? <a href="./login.html">Sign In</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="success-modal">
+        <div class="success-content">
+            <div class="success-icon">✓</div>
+            <h2>Account Created!</h2>
+            <p>Your account has been created successfully.</p>
+            <button class="continue-btn">Continue to Login</button>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

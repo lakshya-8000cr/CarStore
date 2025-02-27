@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCars - Premium Car Services</title>
+    <link rel="stylesheet" href="main-styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <span>We</span>Cars
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#rent">Services</a></li>
+                <li><a href="#why-choose-us">Why Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="cta-button"><a href="login.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="animated-title">Drive with <span>Confidence</span></h1>
+            <p>Experience premium car services with WeCars. Book, ride, and enjoy the journey.</p>
+            <div class="hero-buttons">
+                <a href="#rent" class="primary-btn">Get Started</a>
+                <a href="#why-choose-us" class="secondary-btn">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="car-3d">
+                <div class="car-body"></div>
+                <div class="car-window"></div>
+                <div class="car-wheel wheel-front"></div>
+                <div class="car-wheel wheel-back"></div>
+                <div class="car-light"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="rent" class="services-section">
+        <div class="section-header">
+            <h2>How It <span>Works</span></h2>
+            <p>Complete your car service in three simple steps</p>
+        </div>
+        
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Choose Location</h3>
+                <p>Select your preferred location for pickup and drop-off with our interactive map.</p>
+                <div class="location-selector">
+                    <select id="location-dropdown">
+                        <option value="">Select your location</option>
+                        <option value="new-york">New York</option>
+                        <option value="los-angeles">Los Angeles</option>
+                        <option value="chicago">Chicago</option>
+                        <option value="miami">Miami</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3>Select Date & Time</h3>
+                <p>Choose your preferred date and time for the service with our easy-to-use calendar.</p>
+                <div class="date-picker">
+                    <input type="date" id="service-date">
+                    <input type="time" id="service-time">
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h3>Book Your Service</h3>
+                <p>Confirm your booking with a single click and receive instant confirmation.</p>
+                <button class="book-now-btn">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="section-header">
+            <h2>Premium <span>Features</span></h2>
+            <p>Experience the best with our premium services</p>
+        </div>
+        
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <div class="feature-content">
+                    <h3>Budget Friendly</h3>
+                    <p>Services for every budget without compromising on quality</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-tag"></i>
+                </div>
+                <div class="feature-content">
+                    <h3>Best Price Guarantee</h3>
+                    <p>We offer competitive rates with our price match promise</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="feature-content">
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated team is always ready to assist you</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="feature-content">
+                    <h3>Secure Payments</h3>
+                    <p>Multiple secure payment options for your convenience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="why-us-section">
+        <div class="why-us-content">
+            <div class="section-header">
+                <h2>Why Choose <span>WeCars?</span></h2>
+                <p>We stand out from the competition with our premium services</p>
+            </div>
+            
+            <div class="why-us-features">
+                <div class="why-us-feature">
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                    <p>Hassle-free booking process</p>
+                </div>
+                <div class="why-us-feature">
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                    <p>Safe and sanitized vehicles</p>
+                </div>
+                <div class="why-us-feature">
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                    <p>Affordable pricing with no hidden charges</p>
+                </div>
+                <div class="why-us-feature">
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                    <p>Expert customer support available 24/7</p>
+                </div>
+                <div class="why-us-feature">
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                    <p>Flexible payment options</p>
+                </div>
+                <div class="why-us-feature">
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                    <p>Roadside assistance available anytime</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="why-us-image">
+            <div class="image-container">
+                <div class="floating-car"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-header">
+            <h2>What Our <span>Customers</span> Say</h2>
+            <p>Don't just take our word for it</p>
+        </div>
+        
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">WeCars made my travel easy and stress-free! The booking process was smooth, and the car was in perfect condition.</p>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John D.">
+                    </div>
+                    <div class="author-info">
+                        <h4>John D.</h4>
+                        <p>Regular Customer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card active">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">Great service, affordable prices, and excellent support! I've been using WeCars for over a year now and have never been disappointed.</p>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah W.">
+                    </div>
+                    <div class="author-info">
+                        <h4>Sarah W.</h4>
+                        <p>Premium Member</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">Highly recommended! Booking was seamless and hassle-free. The car was delivered on time and was exactly as described.</p>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Alex T.">
+                    </div>
+                    <div class="author-info">
+                        <h4>Alex T.</h4>
+                        <p>Business Traveler</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonial-controls">
+            <button class="control-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="control-dots">
+                <span class="dot"></span>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="control-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section id="app-download" class="app-section">
+        <div class="app-content">
+            <h2>Download the <span>WeCars</span> App</h2>
+            <p>Manage bookings, find deals, and access 24/7 support from your mobile device</p>
+            
+            <div class="app-buttons">
+                <a href="#" class="app-btn">
+                    <i class="fab fa-apple"></i>
+                    <span>
+                        <small>Download on the</small>
+                        App Store
+                    </span>
+                </a>
+                <a href="#" class="app-btn">
+                    <i class="fab fa-google-play"></i>
+                    <span>
+                        <small>Get it on</small>
+                        Google Play
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="app-image">
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div class="app-interface"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2>Get In <span>Touch</span></h2>
+            <p>We'd love to hear from you</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Address</h3>
+                        <p>123 Car Street, Auto City, AC 12345</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Phone</h3>
+                        <p>+1 234 567 890</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p>info@wecars.com</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <span>We</span>Cars
+                </div>
+                <p>Your trusted car service provider for easy and efficient vehicle management.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rent">Services</a></li>
+                    <li><a href="#why-choose-us">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Car Maintenance</a></li>
+                    <li><a href="#">Car Repair</a></li>
+                    <li><a href="#">Car Wash</a></li>
+                    <li><a href="#">Car Rental</a></li>
+                    <li><a href="#">Car Insurance</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 WeCars. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
