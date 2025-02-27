@@ -19,6 +19,10 @@
     --gradient-hover: linear-gradient(135deg, #2667cc, #6a2cbf);
     --transition: all 0.3s ease;
   }
+
+.floatingCars{
+    background-size:constain;
+}
   
   body {
     background-color: var(--background);
